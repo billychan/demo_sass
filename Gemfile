@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # assets
-gem 'font-awesome'
+gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~>3.2.0'
 
 # bundle exec rake doc:rails generates the API under doc/api.
