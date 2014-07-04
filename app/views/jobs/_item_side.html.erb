@@ -1,0 +1,26 @@
+<div class="panel ext-panel-reverse">
+  <div class="panel-heading">
+    My Jobs
+  </div>
+  <div class="panel-body">
+    <div class="this-job">
+      <h3><%= job.title %></h3>
+      <ul>
+        <li>Job Req <%= job.id %></li>
+        <li><%= job.user_position %></li>
+        <li><%= job.status %></li>
+      </ul>
+      <div class="details-link" title="View/Edit Job Details">
+        View/Edit Job details
+      </div>
+    </div>
+    <div class="other-jobs">
+      <h3>Other Jobs</h3>
+      <ul>
+        <% job.other_jobs.each do |j| %>
+          <li><%= j.title %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
