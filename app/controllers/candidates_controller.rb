@@ -18,7 +18,7 @@ class CandidatesController < ApplicationController
     end
 
     def title
-      "Xxxx " * 5
+      "XXXX " * rand(3..6)
     end
 
     def id
@@ -26,6 +26,7 @@ class CandidatesController < ApplicationController
     end
 
     def status
+      "Data added"
     end
 
     def user_position

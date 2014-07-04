@@ -1,0 +1,14 @@
+@mixin gray-link {
+  color: $gray;
+  cursor: pointer;
+  &:hover {
+    color: #aaaaaa;
+    text-decoration: none;
+  }
+}
+
+@mixin hoverable-img {
+  &:hover {
+    @include opacity(0.6);
+  }
+}

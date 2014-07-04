@@ -21,6 +21,7 @@ gem 'jquery-rails'
 # assets
 gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~>3.2'
+gem 'compass-rails'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc

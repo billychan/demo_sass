@@ -1,10 +1,13 @@
 .ext-panel-reverse {
   .panel-heading {
     background-color: white;
-    margin-bottom: 5px;
-    box-shadow: 0 5px 5px $gray-light;
+    margin-bottom: 3px;
+    @include box-shadow(rgba(gray, 0.2) 0 3px 3px);
   }
-  .panel-body { background-color: whitesmoke; }
+  .panel-body {
+    background-color: whitesmoke;
+    @include box-shadow(rgba(gray, 0.2) 0 2px 3px);
+  }
 }
 
 .ext-panel-side {
@@ -12,7 +15,24 @@
   border-radius: 0;
   .panel-heading {
     border-radius: 0;
-    padding: 20px;
+    padding: 15px 20px;
+    font-weight: bold;
+    a { @include gray-link; }
+    i {
+      padding: 10px;
+    }
+  }
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      list-style: none;
+    }
+  }
+  .section-separator {
+    border-bottom: 1px solid #ccc;
+    @include box-shadow(rgba(gray, 0.2) 0 1px 2px);
+    margin: 30px -15px 30px -15px;
   }
 }
 
