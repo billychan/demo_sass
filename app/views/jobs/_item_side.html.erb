@@ -4,8 +4,14 @@
       <%= fa_icon 'angle-double-left' %>
       My Jobs
     </a>
+    <div class="hidden-md hidden-lg panel-mobile-sub-title">
+      <div class="description">
+        <span>Job Description</span>
+        <span><%= job.title %></span>
+      </div>
+    </div>
   </div>
-  <div class="panel-body">
+  <div class="panel-body hidden-xs hidden-sm">
     <div class="this-job">
       <div class="description">
         <p>Job Description</p>
