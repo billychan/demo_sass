@@ -3,5 +3,15 @@
   .panel-body { background-color: whitesmoke; }
 }
 
-.ext-list-table {
+.ext-table-with-img {
+  // tbody > tr > td.img-text-td {
+  // }
+  tbody > tr > td {
+    padding-top: 20px;
+    img {
+      float: left;
+      margin-right: 10px;
+      margin-top: -10px;
+    }
+  }
 }
