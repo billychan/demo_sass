@@ -16,8 +16,10 @@
         <li><%= job.user_position %></li>
         <li><%= job.status %></li>
       </ul>
-      <div class="details-link" title="View/Edit Job Details">
-        View/Edit Job details
+      <div class="details-link">
+        <button class="btn btn-lg" data-toggle="tooltip" data-placement="top" title="View/Edit Job Details">
+          <%= fa_icon 'gear' %>
+        </button>
       </div>
     </div>
     <div class="section-separator"></div>
