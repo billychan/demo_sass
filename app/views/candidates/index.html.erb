@@ -5,42 +5,34 @@
 
   <div class="main col-md-9">
     <div class="headline">
-      <h1>Candidates</h1>
-      <div class="filters">
-        <div class="status">
-          <span>Jobs Status</span>
-          <form role="select_status">
-            <select id="" name="">
+      <div class="title element">Candidates</div>
+      <div class="filters element">
+        <form role="select_status" class="form-inline">
+          <div class="form-group">
+            <label for="filterJobStatus">Job Status</label>
+            <select id="filterJobStatus" name="" class="form-control">
               <option value="">Interviewing</option>
               <option value="">Interested</option>
               <option value="">Filtered</option>
             </select>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
 
     <div class="list">
-      <table class="table">
-        <th>
-          <td>Candidate</td>
-          <td>Last Interview</td>
-          <td>Candidate Status</td>
-          <td>Interview State</td>
-          <td>Actions</td>
-        </th>
-        <% @candidates.each do |candidate| %>
-          <tr>
-              <td>
-                <img src="" alt="" />
-                <span class="name">Name, Last name</span>
-              </td>
-              <td>Date</td>
-              <td>Candidate status</td>
-              <td>Interviewing state</td>
-              <td>Action image</td>
-          </tr>
-        <% end %>
+      <table class="table table-hover ext-list-table">
+        <tr>
+          <% ["Candidate", "Last Interview", "Candidate Status", "Interview Status", "Actions"].each_with_index do |title, i| %>
+            <th class="<%= (i == 0 || i == 4) ? "" : "hidden-xs hidden-sm" %>">
+              <%= title %>
+              <a href="#" class="btn btn-xs" role="button">
+                <%= fa_icon "sort-desc" %>
+              </a>
+            </th>
+          <% end %>
+        </tr>
+        <%= render partial: 'item_as_row', collection: @candidates  %>
       </table>
     </div>
   </div>

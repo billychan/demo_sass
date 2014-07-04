@@ -18,7 +18,7 @@ class CandidatesController < ApplicationController
     end
 
     def title
-      "X" * 20
+      "Xxxx " * 5
     end
 
     def id

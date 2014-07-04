@@ -1,4 +1,11 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap';
+@import 'font-awesome';
+
 @import 'config/variables';
-@import 'app';
+
+@import 'exts/exts';
+@import 'base/mixins';
+@import 'components/components';
+
+@import 'app/candidates/candidates';
