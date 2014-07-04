@@ -1,11 +1,22 @@
 .ext-panel-reverse {
-  .panel-header { background-color: white; }
+  .panel-heading {
+    background-color: white;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 5px $gray-light;
+  }
   .panel-body { background-color: whitesmoke; }
 }
 
+.ext-panel-side {
+  margin-left: -15px;
+  border-radius: 0;
+  .panel-heading {
+    border-radius: 0;
+    padding: 20px;
+  }
+}
+
 .ext-table-with-img {
-  // tbody > tr > td.img-text-td {
-  // }
   tbody > tr > td {
     padding-top: 20px;
     img {

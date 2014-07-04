@@ -4,8 +4,9 @@
 
 @import 'config/variables';
 
-@import 'exts/exts';
 @import 'base/mixins';
+@import 'exts/exts';
 @import 'components/components';
 
+@import 'app/app';
 @import 'app/candidates/candidates';
