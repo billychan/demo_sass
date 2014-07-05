@@ -1,10 +1,29 @@
-<div class="row">
-  <div class="col-md-2">
+<div class="row candidates">
+  <div class="col-md-2 hidden-xs hidden-sm">
     <%= render partial: 'jobs/item_side', locals: {job: @job} %>
   </div>
 
   <div class="col-md-10 main-data">
-    <div class="headline">
+    <div class="col-sm-12 ext-mobile-nav hidden-lg hidden-md">
+      <div class="row">
+        <%= render partial: 'jobs/item_mobile_title', locals: {job: @job} %>
+        <div class="col-xs-4 candidates-mobile-head">
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Candidates
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Interviewing</a></li>
+              <li><a href="#">Interested</a></li>
+              <li><a href="#">Filtered</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="headline hidden-xs hidden-sm">
       <div class="title element">Candidates</div>
       <div class="filters element">
         <form role="select_status" class="form-inline">
@@ -21,7 +40,7 @@
     </div>
 
     <div class="list">
-      <table class="table table-hover ext-table-with-img">
+      <table class="table table-hover ext-table-with-img app-table">
         <tr>
           <% ["Candidate", "Last Interview", "Candidate Status", "Interview Status", "Actions"]
           .each_with_index do |title, i| %>

@@ -6,7 +6,11 @@
 @import 'config/variables';
 
 @import 'base/mixins';
-@import 'exts/exts';
+
+@import 'exts/table';
+@import 'exts/mobile';
+@import 'exts/panel';
+
 @import 'components/components';
 
 @import 'app/app';

@@ -1,0 +1,10 @@
+.ext-table-with-img {
+  tbody > tr > td {
+    padding-top: 20px;
+    img {
+      float: left;
+      margin-right: 10px;
+      margin-top: -10px;
+    }
+  }
+}

@@ -2,6 +2,8 @@
   margin-bottom: 0;
 }
 
-.app-content {
-  // border: 1px solid $gray-lighter;
+.app-table {
+  tbody > tr > th {
+    border-top: none;
+  }
 }
